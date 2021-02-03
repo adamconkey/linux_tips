@@ -30,11 +30,11 @@ sudo apt install gparted
 2. Open GParted and select the drive you want to auto-mount. See what it's filesystem type is.
 3. Edit `/etc/fstab` with root permissions
 ```bash
-sudo emacs /etc/fstab`
+sudo emacs /etc/fstab
 ```
 3. Add a line at the bottom of the file that looks like
 ```
-/dev/sda1    /media/data_haro    ntfs    defaults    0    2
+/dev/sda1    /media/data_haro    ext4    defaults    0    2
 ```
   * First column is drive partition to mount.
   * Second column is mount point.
