@@ -44,5 +44,11 @@ sudo emacs /etc/fstab
   * Sixth column is `fsck` which determines filesystem order. Only [options](https://help.ubuntu.com/community/Fstab#Pass_.28fsck_order.29) are `0 (no check)`, `1 (check first)`, and `2 (check second)`. Only boot should be `1`, additional drives should be `2`. 
 
   * [Ubuntu: Mount The Drive From Command Line](https://www.cyberciti.biz/faq/mount-drive-from-command-line-ubuntu-linux/) - Simple instructions for mounting a hard drive manually and setting up `fstab` to auto-mount on startup.
+  
+You may need to change the permissions on the drive:
+```bash
+sudo chown -R username:username /media/data_haro
+```
+where you should set `username` to be your username.
 
 --------------------------------------------------------------------------------------------------------
