@@ -2,6 +2,16 @@
 
 --------------------------------------------------------------------------------------------------------
 
+## `rsync`
+### Filter Files and Directories
+
+Here is an example command to transfer files remote host to local by only including directories in the `host`'s `/path/to/files` directory that have the `directory_prefix` (and include all their contents) and exclude everything else:
+```bash
+rsync -avW host:/path/to/files/ ./my/local/dir --include 'directory_prefix*/***' --exclude '*'
+```
+  * [This post](https://unix.stackexchange.com/a/2503/114564) gives helpful advice on how to handle `--include`/`--exclude` with `rsync`.
+
+
 ## Mount a Hard Drive
 ### Manually Mount
 1. Execute `lsblk` to see what your drive partitions are. Example output:
