@@ -1,5 +1,7 @@
 # Linux Tips
 
+Some things I consistently have to look up how to do. This is mainly a reference for myself to remember how to do certain things in Linux.
+
 --------------------------------------------------------------------------------------------------------
 
 ## `rsync`
