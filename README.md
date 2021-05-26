@@ -13,6 +13,12 @@ rsync -avW host:/path/to/files/ ./my/local/dir --include 'directory_prefix*/***'
 ```
   * [This post](https://unix.stackexchange.com/a/2503/114564) gives helpful advice on how to handle `--include`/`--exclude` with `rsync`.
 
+### Use a Different Port Number
+```bash
+rsync -e 'ssh -p 5522' -av user@remote:/path/to/transfer ./local/path/to/save/to
+```
+
+
 
 ## Mount a Hard Drive
 ### Manually Mount
