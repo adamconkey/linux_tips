@@ -69,4 +69,6 @@ sudo chown -R username:username /media/data_haro
 ```
 where you should set `username` to be your username.
 
+Note if you do the auto-mounting and then decide to remove the drive, you must comment out the entry in `/etc/fstab`. Otherwise you may find yourself unable to boot the OS and enter emergency mode like described [here](https://unix.stackexchange.com/questions/347808/ubuntu-gives-message-welcome-to-emergency-mode/347840).
+
 --------------------------------------------------------------------------------------------------------
